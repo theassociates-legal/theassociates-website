@@ -1,0 +1,66 @@
+{
+  "title": "Who We Are",
+  "story": "In a world where industries evolve at lightning speed, we provide legal solutions that keep you ahead. From high-stakes corporate transactions to cutting-edge tech law, we navigate complexity so you can focus on growth.",
+  "difference_heading": "Not your average law firm",
+  "difference": "Whether you're a bold entrepreneur, a multinational powerhouse or a creative visionary, we turn legal complexities into clear, actionable strategies.\n\nWe've advised and structured companies across the Middle East, Europe and the Gulf, helping startups move from launch to scale-up with confidence.",
+  "team_heading": "Our Team",
+  "team_intro": "Partners and associates who bring passion, expertise and wide-ranging support to every mandate.",
+  "team": [
+    {
+      "name": "Jamil Fares",
+      "title": "Partner – Managing Director",
+      "photo": "",
+      "linkedin": "",
+      "bio": [
+        "Member of the Beirut Bar Association since 2015",
+        "Master's in International Business & Transportation Law, Private International Law",
+        "Arbitrator at the International Court for Dispute Resolution (London)",
+        "Public Relations Coordinator – Ambassadors of Peace",
+        "General Counsel of Aurora Group & Trademania.com"
+      ]
+    },
+    {
+      "name": "Ralph Chartouni",
+      "title": "Partner – Head of Corporate Department",
+      "photo": "",
+      "linkedin": "",
+      "bio": [
+        "Member of the Beirut Bar Association since 2010",
+        "Expert in Corporate Law, M&A, Venture Capital & Startups",
+        "Specialist in Intellectual Property & IP Protection",
+        "Former Senior Associate & Founder of the Expo 2020 Legal Department",
+        "General Counsel of Basma.com"
+      ]
+    },
+    {
+      "name": "Jhony Helou",
+      "title": "Partner – Head of Litigation Department",
+      "photo": "",
+      "linkedin": "",
+      "bio": [
+        "Member of the Beirut Bar Association since 2003",
+        "20+ years of experience before the Lebanese courts, registries and public administrations, including business registration, corporate filings, enforcement of registry decisions and resolution of contested or rejected filings"
+      ]
+    },
+    {
+      "name": "Mario Younes",
+      "title": "Partner – Head of Family & Civil Status Department",
+      "photo": "",
+      "linkedin": "",
+      "bio": [
+        "Member of the Beirut Bar Association since 2003",
+        "Expert in Canonical and Civil Status Law"
+      ]
+    },
+    {
+      "name": "Wakim Mhawej",
+      "title": "Junior Associate",
+      "photo": "",
+      "linkedin": "",
+      "bio": [
+        "Member of the Beirut Bar Association since 2026",
+        "Elected member of his hometown Municipal Council"
+      ]
+    }
+  ]
+}

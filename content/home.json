@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Legal Excellence, Redefined",
+  "headline": "Your Strategic Partner in a Changing World",
+  "tagline": "You dream it. We protect it.",
+  "hero_image": "",
+  "button_label": "See How",
+  "teasers": [
+    {
+      "title": "What We Do",
+      "heading": "Legal expertise with an edge",
+      "text": "From high-stakes corporate transactions to cutting-edge tech law, we navigate complexity so you can focus on growth.",
+      "link_label": "Our Services",
+      "link": "what-we-do.html"
+    },
+    {
+      "title": "Our Clients",
+      "heading": "From emerging startups to global enterprises",
+      "text": "We make law work for you, whatever your size, sector or stage.",
+      "link_label": "Our Clients",
+      "link": "our-clients.html"
+    },
+    {
+      "title": "Who We Are",
+      "heading": "Not your average law firm",
+      "text": "We're not just lawyers. We're problem-solvers, dealmakers and strategic advisors.",
+      "link_label": "Who We Are",
+      "link": "who-we-are.html"
+    }
+  ],
+  "cta_heading": "Working with us is different. Find out why.",
+  "cta_button": "Work With Us"
+}

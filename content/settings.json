@@ -1,0 +1,21 @@
+{
+  "firm_name": "The Associates",
+  "logo_light": "images/logo-white.png",
+  "logo_dark": "images/logo-dark.png",
+  "email": "info@theassociates.me",
+  "form_email": "info@theassociates.me",
+  "linkedin": "",
+  "offices": [
+    {
+      "city": "Lebanon",
+      "address": "Office 12 & 13, 2nd Floor, Center 114\nPresidential Palace Road, Baabda, Lebanon",
+      "phones": ["+961 25 457 787", "+961 79 373 993", "+971 58 527 0028"],
+      "email": "info@theassociates.me"
+    }
+  ],
+  "footprint_title": "Our Global Footprint",
+  "footprint_intro": "Our expertise spans across continents, ensuring seamless legal support wherever you are.",
+  "countries": ["Lebanon", "UAE", "Saudi Arabia", "Jordan", "Egypt", "Cyprus", "Singapore", "UK", "Greece", "France", "Switzerland", "BVI", "Cayman Islands", "Seychelles", "Turkey", "Tanzania", "South Africa"],
+  "footprint_tagline": "A world without borders needs legal minds without limits.",
+  "footer_note": "The content of this website is for general information only and does not constitute legal advice."
+}
