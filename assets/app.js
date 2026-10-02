@@ -113,9 +113,12 @@
 
     about: function (s, d) {
       var team = list(d.team).map(function (m) {
-        var av = m.photo ? '<img src="' + esc(m.photo) + '" alt="' + esc(m.name) + '">' : esc(initials(m.name));
-        return '<article class="member reveal"><div class="top"><div class="avatar">' + av + '</div>' +
-          '<div><h3>' + esc(m.name) + '</h3><div class="role">' + esc(m.title) + '</div></div></div>' +
+        var head = m.photo
+          ? '<div class="portrait"><img src="' + esc(m.photo) + '" alt="' + esc(m.name) + '" loading="lazy"></div>' +
+            '<div class="top"><div><h3>' + esc(m.name) + '</h3><div class="role">' + esc(m.title) + '</div></div></div>'
+          : '<div class="top"><div class="avatar">' + esc(initials(m.name)) + '</div>' +
+            '<div><h3>' + esc(m.name) + '</h3><div class="role">' + esc(m.title) + '</div></div></div>';
+        return '<article class="member reveal' + (m.photo ? ' has-photo' : '') + '">' + head +
           '<ul>' + list(m.bio).map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') + '</ul>' +
           (m.linkedin ? '<a class="li-link" href="' + esc(m.linkedin) + '" target="_blank" rel="noopener">LinkedIn →</a>' : '') +
           '</article>';
