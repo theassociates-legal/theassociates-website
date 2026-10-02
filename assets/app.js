@@ -7,7 +7,7 @@
   var NAV = [
     { href: 'what-we-do.html', label: 'What We Do', key: 'services' },
     { href: 'who-we-are.html', label: 'Who We Are', key: 'about' },
-    { href: 'our-clients.html', label: 'Our Clients', key: 'clients' }
+    { href: 'our-clients.html', label: 'Clients & Cases', key: 'clients' }
   ];
 
   function esc(s) {
@@ -141,11 +141,24 @@
           (q.logo ? '<img src="' + esc(q.logo) + '" alt="' + esc(q.company) + '">' : '') +
           '<div><strong>' + esc(q.name) + '</strong><span>' + esc([q.role, q.company].filter(Boolean).join(', ')) + '</span></div></figcaption></figure>';
       }).join('');
+      var cases = list(d.cases).filter(function (c) { return c && (c.title || c.summary); }).map(function (c) {
+        return '<article class="case reveal">' +
+          '<div class="case-meta">' + esc(c.practice) + (c.year ? '<span>' + esc(c.year) + '</span>' : '') + '</div>' +
+          '<h3>' + esc(c.title) + '</h3>' + paras(c.summary) +
+          (c.outcome ? '<p class="case-outcome"><strong>Outcome</strong>' + esc(c.outcome) + '</p>' : '') +
+          '</article>';
+      }).join('');
       return pageHero(d.title) +
-        '<section><div class="wrap reveal"><div class="lead">' + paras(d.intro) + '</div></div></section>' +
+        (cases ? '<nav class="subnav"><div class="wrap"><a href="#clients">' + esc(d.clients_heading || 'Our Clients') + '</a>' +
+          '<a href="#cases">' + esc(d.cases_heading || 'Our Success Stories') + '</a></div></nav>' : '') +
+        '<section id="clients"><div class="wrap reveal"><div class="eyebrow">Who we represent</div><h2 class="section-title">' + esc(d.clients_heading || 'Our Clients') + '</h2>' +
+        '<div class="lead">' + paras(d.intro) + '</div></div></section>' +
         '<section class="mist"><div class="wrap"><div class="eyebrow">Sectors</div><h2 class="section-title">' + esc(d.sectors_heading) + '</h2>' +
         '<div class="sectors reveal">' + sectors + '</div></div></section>' +
         (quotes ? '<section><div class="wrap"><div class="eyebrow">Testimonials</div><h2 class="section-title">' + esc(d.testimonials_heading) + '</h2><div class="quotes">' + quotes + '</div></div></section>' : '') +
+        (cases ? '<section id="cases" class="cases-section"><div class="wrap"><div class="eyebrow">Track record</div><h2 class="section-title">' + esc(d.cases_heading || 'Our Success Stories') + '</h2>' +
+          (d.cases_intro ? '<p class="muted" style="max-width:720px">' + esc(d.cases_intro) + '</p>' : '') +
+          '<div class="cases">' + cases + '</div></div></section>' : '') +
         cta();
     },
 

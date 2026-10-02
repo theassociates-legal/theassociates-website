@@ -1,5 +1,6 @@
 {
-  "title": "Our Clients",
+  "title": "Clients & Cases",
+  "clients_heading": "Our Clients",
   "intro": "From emerging startups to global enterprises, we make law work for you. We advise corporate clients across a wide range of industries.",
   "sectors_heading": "Industries We Serve",
   "sectors": [
@@ -18,5 +19,8 @@
     "Home & Rental"
   ],
   "testimonials_heading": "In Their Words",
-  "testimonials": []
+  "testimonials": [],
+  "cases_heading": "Our Success Stories",
+  "cases_intro": "A selection of matters we have handled. Client names are withheld to protect confidentiality.",
+  "cases": []
 }

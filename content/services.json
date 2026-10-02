@@ -3,16 +3,91 @@
   "intro": "We're not just lawyers. We're problem-solvers, dealmakers and strategic advisors.\n\nWhether you're a bold entrepreneur, a multinational powerhouse or a creative visionary, we turn legal complexity into clear, actionable strategy.",
   "services_heading": "Our Services",
   "groups": [
-    { "name": "Business Architects", "items": ["Corporate Law", "Mergers & Acquisitions", "Structuring & Restructuring"] },
-    { "name": "Money Movers & Market Makers", "items": ["Banking", "Finance", "Crypto", "Venture Capital"] },
-    { "name": "Digital Defenders", "items": ["Cyber Law", "E-Commerce", "Intellectual Property", "Trademarks & Copyrights"] },
-    { "name": "Builders & Dealmakers", "items": ["Real Estate", "Construction", "Engineering Contracts", "Subdivision"] },
-    { "name": "The Closer's Advantage", "items": ["Litigation", "Arbitration", "Dispute Resolution"] },
-    { "name": "Legacy Protectors", "items": ["Family Business Law", "Estate Planning", "Matrimonial Law"] },
-    { "name": "The Creators' Legal Shield", "items": ["Entertainment", "Media", "Art", "Copyright Law"] },
-    { "name": "Global Business Enablers", "items": ["International Trade", "Diplomatic & NGO Affairs"] },
-    { "name": "Regulatory Navigators", "items": ["Tax Law", "Public & Administrative Law", "Compliance"] },
-    { "name": "Workplace Guardians", "items": ["Labor Law", "Social Security", "Employment Rights"] }
+    {
+      "name": "Business Architects",
+      "items": [
+        "Corporate Law",
+        "Mergers & Acquisitions",
+        "Structuring & Restructuring"
+      ]
+    },
+    {
+      "name": "Money Movers & Market Makers",
+      "items": [
+        "Banking",
+        "Finance",
+        "Crypto",
+        "Venture Capital"
+      ]
+    },
+    {
+      "name": "Digital Defenders",
+      "items": [
+        "Cyber Law",
+        "E-Commerce",
+        "Intellectual Property",
+        "Trademarks & Copyrights"
+      ]
+    },
+    {
+      "name": "Builders & Dealmakers",
+      "items": [
+        "Real Estate",
+        "Construction",
+        "Engineering Contracts",
+        "Subdivision"
+      ]
+    },
+    {
+      "name": "Litigators at Your Side",
+      "items": [
+        "Litigation",
+        "Arbitration",
+        "Dispute Resolution",
+        "Criminal Law",
+        "Civil Law"
+      ]
+    },
+    {
+      "name": "Legacy Protectors",
+      "items": [
+        "Family Business Law",
+        "Estate Planning",
+        "Matrimonial Law"
+      ]
+    },
+    {
+      "name": "The Creators' Legal Shield",
+      "items": [
+        "Entertainment",
+        "Media",
+        "Art",
+        "Copyright Law"
+      ]
+    },
+    {
+      "name": "Global Business Enablers",
+      "items": [
+        "International Trade",
+        "Diplomatic & NGO Affairs"
+      ]
+    },
+    {
+      "name": "Regulatory Navigators",
+      "items": [
+        "Tax Law",
+        "Public & Administrative Law",
+        "Compliance"
+      ]
+    },
+    {
+      "name": "Workplace Guardians",
+      "items": [
+        "Labor Law",
+        "Social Security",
+        "Employment Rights"
+      ]
+    }
   ],
   "partners_heading": "Who We Work With",
   "partners_text": "We partner with visionaries, entrepreneurs and industry giants across the globe, from first-time founders to established groups expanding across borders."
