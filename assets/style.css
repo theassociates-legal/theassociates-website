@@ -99,7 +99,13 @@ section { padding: 110px 0; }
 .group li::before { content: ''; position: absolute; left: -20px; top: 16px; width: 8px; height: 2px; background: var(--red); }
 
 /* Team */
-.team { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 34px; margin-top: 56px; }
+.team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; }
+.team .member { padding: 0 24px 26px; }
+.team .member:not(.has-photo) { padding-top: 26px; }
+.team .portrait { margin: 0 -24px 22px; }
+.team .member h3 { font-size: 19px; }
+.team .member ul { font-size: 14px; }
+@media (max-width: 1100px) { .team { grid-template-columns: repeat(2, 1fr); } }
 .member { background: #fff; border: 1px solid var(--line); padding: 34px; display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s; }
 .member:hover { box-shadow: 0 18px 40px rgba(0,0,0,.08); transform: translateY(-3px); }
 .member .top { display: flex; gap: 20px; align-items: center; margin-bottom: 22px; }
