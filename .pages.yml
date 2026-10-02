@@ -1,0 +1,182 @@
+media:
+  input: images
+  output: images
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small red line above headline, type: string }
+      - { name: headline, label: Headline, type: string }
+      - { name: tagline, label: Tagline under headline, type: string }
+      - { name: hero_image, label: Background photo (optional — leave empty for the dark design), type: image }
+      - { name: button_label, label: Button text, type: string }
+      - name: teasers
+        label: Three blocks under the hero
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Big title, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: link_label, label: Link text, type: string }
+          - { name: link, label: Link address (e.g. what-we-do.html), type: string }
+      - { name: cta_heading, label: Red banner heading, type: string }
+      - { name: cta_button, label: Red banner button text, type: string }
+
+  - name: services
+    label: What We Do
+    type: file
+    path: content/services.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro (leave a blank line between paragraphs), type: text }
+      - { name: services_heading, label: Services heading, type: string }
+      - name: groups
+        label: Service groups
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - { name: name, label: Group name, type: string }
+          - { name: items, label: Services in this group, type: string, list: true }
+      - { name: partners_heading, label: '"Who we work with" heading', type: string }
+      - { name: partners_text, label: '"Who we work with" text', type: text }
+
+  - name: about
+    label: Who We Are & Team
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: story, label: Firm story, type: text }
+      - { name: difference_heading, label: Second section heading, type: string }
+      - { name: difference, label: Second section text (blank line = new paragraph), type: text }
+      - { name: team_heading, label: Team heading, type: string }
+      - { name: team_intro, label: Team intro, type: text }
+      - name: team
+        label: Team members (drag to reorder)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} — {title}"
+        fields:
+          - { name: name, label: Full name, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: photo, label: Photo (optional — initials are shown if empty; square photo works best), type: image }
+          - { name: linkedin, label: LinkedIn URL (optional), type: string }
+          - { name: bio, label: Bio points, type: string, list: true }
+
+  - name: clients
+    label: Our Clients
+    type: file
+    path: content/clients.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: sectors_heading, label: Industries heading, type: string }
+      - { name: sectors, label: Industries, type: string, list: true }
+      - { name: testimonials_heading, label: Testimonials heading (section only shows once you add one), type: string }
+      - name: testimonials
+        label: Testimonials / notes from clients
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{company}"
+        fields:
+          - { name: quote, label: Quote, type: text }
+          - { name: name, label: Person's name, type: string }
+          - { name: role, label: Role (e.g. CEO), type: string }
+          - { name: company, label: Company, type: string }
+          - { name: logo, label: Company logo (only with the client's permission), type: image }
+
+  - name: contact
+    label: Work With Us (contact page)
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: form_heading, label: Form heading, type: string }
+      - { name: success_message, label: Message shown after sending, type: string }
+
+  - name: settings
+    label: Offices, contact details & footer
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: firm_name, label: Firm name, type: string }
+      - { name: logo_light, label: Logo (white, for dark backgrounds), type: image }
+      - { name: logo_dark, label: Logo (dark, spare), type: image }
+      - { name: email, label: Main email, type: string }
+      - { name: form_email, label: Contact-form messages go to, type: string }
+      - { name: linkedin, label: Firm LinkedIn URL (optional), type: string }
+      - name: offices
+        label: Offices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{city}"
+        fields:
+          - { name: city, label: Office name / city, type: string }
+          - { name: address, label: Address (one line per row), type: text }
+          - { name: phones, label: Phone numbers, type: string, list: true }
+          - { name: email, label: Office email (optional), type: string }
+      - { name: footprint_title, label: Global footprint heading, type: string }
+      - { name: footprint_intro, label: Global footprint text, type: text }
+      - { name: countries, label: Countries, type: string, list: true }
+      - { name: footprint_tagline, label: Global footprint closing line, type: string }
+      - { name: footer_note, label: Footer note, type: text }
+
+  - name: legal
+    label: Privacy Policy & Disclaimer
+    type: file
+    path: content/legal.json
+    format: json
+    fields:
+      - name: privacy
+        label: Privacy Policy
+        type: object
+        fields:
+          - { name: title, type: string }
+          - { name: updated, label: Last updated, type: string }
+          - name: sections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{heading}"
+            fields:
+              - { name: heading, type: string }
+              - { name: text, type: text }
+      - name: disclaimer
+        label: Legal Disclaimer
+        type: object
+        fields:
+          - { name: title, type: string }
+          - { name: updated, label: Last updated, type: string }
+          - name: sections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{heading}"
+            fields:
+              - { name: heading, type: string }
+              - { name: text, type: text }
