@@ -119,6 +119,7 @@
           : '<div class="top"><div class="avatar">' + esc(initials(m.name)) + '</div>' +
             '<div><h3>' + esc(m.name) + '</h3><div class="role">' + esc(m.title) + '</div></div></div>';
         return '<article class="member reveal' + (m.photo ? ' has-photo' : '') + '">' + head +
+          (m.summary ? '<p class="member-summary">' + esc(m.summary) + '</p>' : '') +
           '<ul>' + list(m.bio).map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') + '</ul>' +
           (m.linkedin ? '<a class="li-link" href="' + esc(m.linkedin) + '" target="_blank" rel="noopener">LinkedIn →</a>' : '') +
           '</article>';
@@ -127,8 +128,10 @@
         '<section><div class="wrap reveal"><div class="lead">' + paras(d.story) + '</div></div></section>' +
         '<section class="mist"><div class="wrap reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 80px;align-items:start">' +
         '<h2 class="section-title">' + esc(d.difference_heading) + '</h2><div>' + paras(d.difference) + '</div></div></section>' +
+        (d.international_text ? '<section class="reach"><div class="wrap reveal"><div class="reach-box"><div class="eyebrow">Across borders</div>' +
+          '<h2 class="section-title">' + esc(d.international_heading || 'International Reach') + '</h2>' + paras(d.international_text) + '</div></div></section>' : '') +
         '<section><div class="wrap"><div class="eyebrow">The people</div><h2 class="section-title">' + esc(d.team_heading) + '</h2>' +
-        '<p class="muted" style="max-width:680px">' + esc(d.team_intro) + '</p><div class="team">' + team + '</div></div></section>' +
+        '<p class="muted" style="max-width:680px">' + esc(d.team_intro) + '</p><div class="team' + (list(d.team).length < 4 ? ' cols-' + list(d.team).length : '') + '">' + team + '</div></div></section>' +
         footprint(s) + cta();
     },
 
