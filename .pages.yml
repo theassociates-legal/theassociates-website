@@ -62,6 +62,8 @@ content:
       - { name: story, label: Firm story, type: text }
       - { name: difference_heading, label: Second section heading, type: string }
       - { name: difference, label: Second section text (blank line = new paragraph), type: text }
+      - { name: international_heading, label: International Reach heading, type: string }
+      - { name: international_text, label: International Reach text, type: text }
       - { name: team_heading, label: Team heading, type: string }
       - { name: team_intro, label: Team intro, type: text }
       - name: team
@@ -74,6 +76,7 @@ content:
         fields:
           - { name: name, label: Full name, type: string }
           - { name: title, label: Title, type: string }
+          - { name: summary, label: One-line summary (optional), type: text }
           - { name: photo, label: Photo (optional — initials are shown if empty; square photo works best), type: image }
           - { name: linkedin, label: LinkedIn URL (optional), type: string }
           - { name: bio, label: Bio points, type: string, list: true }
