@@ -7,8 +7,13 @@
       "name": "Business Architects",
       "items": [
         "Corporate Law",
+        "Company Formation & Corporate Governance",
+        "Commercial Contracts",
         "Mergers & Acquisitions",
-        "Structuring & Restructuring"
+        "Joint Ventures",
+        "Structuring & Restructuring",
+        "Startups & Investment",
+        "Insolvency & Bankruptcy"
       ]
     },
     {
@@ -16,7 +21,6 @@
       "items": [
         "Banking",
         "Finance",
-        "Crypto",
         "Venture Capital"
       ]
     },
@@ -24,7 +28,11 @@
       "name": "Digital Defenders",
       "items": [
         "Cyber Law",
+        "Data Protection & Privacy",
         "E-Commerce",
+        "Technology Agreements",
+        "Digital Assets & Blockchain",
+        "Google Play & Android Compliance",
         "Intellectual Property",
         "Trademarks & Copyrights"
       ]
@@ -35,25 +43,31 @@
         "Real Estate",
         "Construction",
         "Engineering Contracts",
-        "Subdivision"
+        "Land Subdivision & Development"
       ]
     },
     {
       "name": "Litigators at Your Side",
       "items": [
-        "Litigation",
+        "Civil Litigation",
+        "Commercial Litigation",
+        "Criminal Law & Defense",
         "Arbitration",
-        "Dispute Resolution",
-        "Criminal Law",
-        "Civil Law"
+        "Mediation & Alternative Dispute Resolution",
+        "Enforcement Proceedings"
       ]
     },
     {
-      "name": "Legacy Protectors",
+      "name": "Family & Personal Status",
       "items": [
-        "Family Business Law",
+        "Marriage & Matrimonial Matters",
+        "Divorce, Separation & Annulment",
+        "Civil Status & Vital Records",
+        "Child Custody & Maintenance",
+        "Inheritance & Succession",
+        "Canon & Ecclesiastical Law",
         "Estate Planning",
-        "Matrimonial Law"
+        "Family Business & Succession Planning"
       ]
     },
     {
@@ -69,7 +83,12 @@
       "name": "Global Business Enablers",
       "items": [
         "International Trade",
-        "Diplomatic & NGO Affairs"
+        "Foreign Investment & Market Entry",
+        "Cross-Border Transactions",
+        "Commercial Agency & Distribution",
+        "Franchising",
+        "Immigration, Residency & Citizenship",
+        "NGOs & International Organizations"
       ]
     },
     {
@@ -77,7 +96,9 @@
       "items": [
         "Tax Law",
         "Public & Administrative Law",
-        "Compliance"
+        "Anti-Money Laundering",
+        "Corporate Compliance",
+        "Licensing & Regulatory Approvals"
       ]
     },
     {
@@ -85,7 +106,7 @@
       "items": [
         "Labor Law",
         "Social Security",
-        "Employment Rights"
+        "Employment Advisory"
       ]
     }
   ],
